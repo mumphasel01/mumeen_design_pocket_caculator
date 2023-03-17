@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocket Caculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="Caculator_container">
+    <input type="text" name="" id="display">
+    <div id="cacculator_buttoncontainer">
+<div class="button_container">
+    <button class="caculator_button" onclick="document.getElementById('display').value += '1' ">1</button>
+    <button class="caculator_button" onclick="document.getElementById('display').value += '2' ">2</button>
+    <button class="caculator_button" onclick="document.getElementById('display').value += '3' ">3</button>
+    <button class="caculator_button" onclick="document.getElementById('display').value += '+' ">+</button>   
+</div>
+
+<div class="button_container">
+    <button  class="caculator_button" onclick="document.getElementById('display').value += '4' ">4</button>
+    <button class="caculator_button" onclick="document.getElementById('display').value += '5' ">5</button>
+    <button class="caculator_button" onclick="document.getElementById('display').value += '6' ">6</button>
+    <button class="caculator_button" onclick="document.getElementById('display').value += '-' ">-</button>
+</div>
+
+<div class="button_container" >
+    <button class="caculator_button" class="caculator_button" onclick="document.getElementById('display').value += '7' ">7</button>
+    <button class="caculator_button" onclick="document.getElementById('display').value += '8' ">8</button>
+    <button class="caculator_button" onclick="document.getElementById('display').value += '9' ">9</button>
+    <button class="caculator_button" onclick="document.getElementById('display').value += '*' ">x</button>
+</div>
+
+<div class="button_container">
+    <button class="caculator_button" onclick="document.getElementById('display').value += '0' ">0</button>
+    <button class="caculator_button" onclick="document.getElementById('display').value += '.' ">.</button>
+    <button class="caculator_button" onclick="document.getElementById('display').value = eval(document.getElementById('display').value)  ">=</button>
+    <button class="caculator_button" onclick="document.getElementById('display').value += '/' ">/</button>
+</div>
+
+<div class="button_container">
+    <button class="caculator_button" onclick="document.getElementById('display').value = '' ">clear</button>
+    <button class="caculator_button" onclick="document.getelementById('display').output.value.slice(0, -1) ">Del</button>
+</div>
+</div>
+</div>
+</body>
+</html>
